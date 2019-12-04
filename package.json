@@ -1,0 +1,22 @@
+{
+  "name": "simple_editor",
+  "version": "1.0.0",
+  "description": "Для работы с элементом нажмите на него 1 раз.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tima1702/simple-editor.git"
+  },
+  "author": "TImpofey Kuznetsov",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tima1702/simple-editor/issues"
+  },
+  "homepage": "https://github.com/tima1702/simple-editor#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
