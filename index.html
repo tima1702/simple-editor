@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Canvas</title>
+    <link rel="stylesheet" type="text/css" href="bootstrap.css" />
+    <link rel="stylesheet" type="text/css" href="main.css" />
+  </head>
+  <body>
+    <header>
+      <button class="btn" onclick="controlHide()">Hide Controls</button>
+      <button class="btn" onclick="saveToPng()">Save to Png</button>
+      <div
+        class="verticalHR"
+        style=" border-left:    1px solid hsla(200, 10%, 50%,100); margin-right: 10px; display:none;"
+      ></div>
+      <div class="content"></div>
+    </header>
+    <div class="canvas ">
+      <div class="block"></div>
+    </div>
+
+    <div class="sidepane col">
+      <div class="assets">
+        <h3>Assets</h3>
+        <div class="text">
+          <h4>Text</h4>
+          <input type="text" />
+          <button
+            id="addText"
+            class="btn btn-sm"
+            onclick="addTextAssets(this)"
+            style="float: right; "
+          >
+            add
+          </button>
+          <ul style="padding-top: 3px;"></ul>
+        </div>
+        <hr />
+        <div class="image">
+          <h4>Images</h4>
+          <ul class="list-unstyled">
+            <ul id="list-images"></ul>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <script src="html2canvas.min.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,205 @@
+*,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+
+.sidepane {
+  width: 270px;
+  height: 100vh;
+  overflow: scroll;
+  background-color: #ccc;
+  padding-top: 10px;
+  overflow: auto;
+}
+
+.sidepane input {
+  width: 160px;
+}
+
+.sidepane .form {
+  height: 80px;
+  margin: 10px 0;
+}
+
+.sidepane .assets {
+  width: 100%;
+}
+
+#assetText {
+  font-size: 24px;
+}
+
+.assets .text,
+.assets .image {
+  margin: 10px 0;
+}
+
+.assets .image ul li {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  height: 50px;
+  margin-right: 5px;
+  margin-bottom: 5px;
+}
+
+.assets .image ul li img {
+  width: 50px;
+  height: 50px;
+}
+
+.canvas {
+  border: 1px solid;
+  left: 300px;
+  top: 80px;
+  position: fixed;
+  width: 600px;
+  height: 600px;
+  margin: 10px;
+
+}
+
+.canvas .block {
+  width: 600px;
+  height: 600px;
+  overflow: hidden;
+
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+}
+
+.canvas .block img {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.canvas .block .centerButton {
+  position: absolute;
+  font-size: 20px;
+  width: 28px;
+  height: 28px;
+  text-align: center;
+}
+
+.canvas .block .centerButton:hover {
+  cursor: pointer;
+}
+
+.canvas .block .blockAngle {
+  width: 8px;
+  height: 8px;
+  position: absolute;
+}
+
+.controlElement {
+  visibility: hidden;
+}
+
+.canvas .block .leftTopButton {
+  border-top: 1px solid black;
+  border-left: 1px solid black;
+  left: -1px;
+  top: -1px;
+}
+
+.canvas .block .leftTopButton:hover {
+  cursor: nwse-resize;
+}
+
+.canvas .block .leftBottomButton {
+  border-bottom: 1px solid black;
+  border-left: 1px solid black;
+  bottom: -1px;
+  left: -1px;
+}
+
+.canvas .block .leftBottomButton:hover {
+  cursor: nesw-resize;
+}
+
+.canvas .block .rigthTopButton {
+  position: absolute;
+  border-top: 1px solid black;
+  border-right: 1px solid black;
+  right: -1px;
+  top: -1px;
+}
+
+.canvas .block .rigthTopButton:hover {
+  cursor: nesw-resize;
+}
+
+.canvas .block .rigthBottomButton {
+  position: absolute;
+  border-bottom: 1px solid black;
+  border-right: 1px solid black;
+  bottom: -1px;
+  right: -1px;
+}
+
+.canvas .block .rigthBottomButton:hover {
+  cursor: nwse-resize;
+}
+
+
+.item {
+  border: 1px solid transparent;
+  position: absolute;
+}
+
+.item.selected {
+  border-color: blue;
+}
+
+.text-block {
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.text ul {
+  margin-top: 10px;
+}
+
+.text ul li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.text ul li span {
+  font-size: 16px;
+}
+
+header {
+  position: fixed;
+  left: 270px;
+  top: 0;
+  padding: 10px;
+  background-color: #ccc;
+  width: 100%;
+  display: flex;
+}
+
+header button {
+  margin-right: 10px;
+}
+
+header img {
+  margin-right: 10px;
+}
+
+header .text {
+  margin-right: 10px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  width: 30px;
+  height: 30px;
+  display: inline-flex;
+}
