@@ -2,9 +2,12 @@
   "name": "simple_editor",
   "version": "1.0.0",
   "description": "Для работы с элементом нажмите на него 1 раз.",
-  "main": "server.js",
+  "main": "index.js",
+  "engines": {
+    "node": "12.x"
+  },
   "scripts": {
-    "start": "node server.js"
+    "start": "node index.js"
   },
   "repository": {
     "type": "git",
