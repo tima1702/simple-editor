@@ -8,7 +8,9 @@ function getCanvasBlock() {
 
 function addTextAssets(item) {
   const text = item.parentElement.getElementsByTagName("input")[0].value;
-
+  if (!text.trim()) {
+    return alert('Invalid text');
+  }
   let obj = getStorageObj("textAssets");
 
   const id = new Date().getTime().toString();
